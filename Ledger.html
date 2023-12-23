@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Journal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        
+        a {
+            list-style-type: none;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }   
+        table {
+            border-collapse: collapse;
+            width: 9in;
+            margin-top: 100px auto;  
+            align-items: center; 
+            margin: 0 auto;
+        }
+
+        table, th, td {
+            border: 2px solid black;
+            align-items: center;
+            font-size: 20px;
+            
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        
+        .account-number {
+        background-color: #fc6c85;
+        }
+
+          /* Header Row */
+        tr:nth-child(1),
+        tr:nth-child(31), 
+        tr:nth-child(39), 
+        tr:nth-child(57), 
+        tr:nth-child(71) 
+        {
+            background-color: #88AB8E;
+        }
+        tr:nth-child(2),
+        tr:nth-child(14),
+        tr:nth-child(17),
+        tr:nth-child(20),
+        tr:nth-child(25),
+        tr:nth-child(28),
+        tr:nth-child(32),
+        tr:nth-child(36),
+        tr:nth-child(40),
+        tr:nth-child(46),
+        tr:nth-child(52),
+        tr:nth-child(58),
+        tr:nth-child(64),
+        tr:nth-child(72),
+        tr:nth-child(79),
+        tr:nth-child(84),
+        tr:nth-child(89)
+        {
+            background-color: #AFC8AD;
+        }
+        /* Adjust the width of the first column in row 3 */
+        tr:nth-child(3) td:nth-child(1) {
+            width: 0.5in;
+        }
+        tr:nth-child(3),
+        tr:nth-child(4),
+        tr:nth-child(5),
+        tr:nth-child(6),
+        tr:nth-child(7),
+        tr:nth-child(8),
+        tr:nth-child(9),
+        tr:nth-child(10),
+        tr:nth-child(11),
+        tr:nth-child(12),
+        tr:nth-child(13),
+        tr:nth-child(15),
+        tr:nth-child(16),
+        tr:nth-child(18),
+        tr:nth-child(19),
+        tr:nth-child(21),
+        tr:nth-child(22),
+        tr:nth-child(23),
+        tr:nth-child(24),
+        tr:nth-child(26),
+        tr:nth-child(27),
+        tr:nth-child(29),
+        tr:nth-child(30),
+        tr:nth-child(33),
+        tr:nth-child(34),
+        tr:nth-child(35),
+        tr:nth-child(37),
+        tr:nth-child(38),
+        tr:nth-child(41),
+        tr:nth-child(42),
+        tr:nth-child(43),
+        tr:nth-child(45),
+        tr:nth-child(47),
+        tr:nth-child(48),
+        tr:nth-child(49),
+        tr:nth-child(51),
+        tr:nth-child(53),
+        tr:nth-child(54),
+        tr:nth-child(55),
+        tr:nth-child(59),
+        tr:nth-child(60),
+        tr:nth-child(61),
+        tr:nth-child(63),
+        tr:nth-child(65),
+        tr:nth-child(66),
+        tr:nth-child(67),
+        tr:nth-child(69),
+        tr:nth-child(73),
+        tr:nth-child(74),
+        tr:nth-child(75),
+        tr:nth-child(76),
+        tr:nth-child(77),
+        tr:nth-child(78),
+        tr:nth-child(80),
+        tr:nth-child(81),
+        tr:nth-child(82),
+        tr:nth-child(83),
+        tr:nth-child(85),
+        tr:nth-child(86),
+        tr:nth-child(87),
+        tr:nth-child(88),
+        tr:nth-child(90) {
+            background-color: #EEE7DA;
+        }
+        .double-underline {
+            position: relative;
+            
+        }
+        .double-underline:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            right: 0;
+            width: 60px;
+            margin-left: -30px;
+            bottom: 13px;
+            height: 3px;
+            border-bottom: 3px double;
+        }
+        header {
+            background-color: #27374D;
+            height: 60px;
+            text-align: right;
+            font-size: 17px;
+            padding-top: 5px;
+        }
+        ul, ol {
+            margin-bottom: 30px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        li {
+            margin-bottom: 5px;
+            margin-right: 10px;
+        }
+
+
+    </style>
+    </head>
+<body>
+    <header>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="chart.html">Chart of Accounts</a></li>
+        <li><a href="General-Journal.html">General Journal</a></li>
+        <li><a href="Ledger.html">General Ledger</a></li>
+        <li><a href="trialbalance.html">Trial Balance</a></li>
+        <li><a href="adjustingentries.html">Adjusting Entries</a></li>
+        <li><a href="worksheet.html">Worksheet</a></li>
+        <li><a href="financialstatement.html">Financial Statements</a></li>
+    </ul>
+    </header>
+    
+    <h1 style="text-align: center;">General Ledger</h1>
+    <table>
+        <tr>
+            <td colspan="6" style="font-weight: bolder;">ASSETS</td>
+        </tr>
+        <tr>
+            <td colspan="6" style="font-weight: bold;">Cash</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">2022</td>
+            <td >Particulars</td>
+            <td>Account No.</td>
+            <td>Debit</td>
+            <td>Credit</td>
+            
+        </tr>
+
+        <tr>
+            <td>Dec.</td>
+            <td>1</td>
+            <td ></td>
+            <td >110</td>
+            <td>₱150,000</td>
+            <td></td>
+
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>2</td>
+            <td ></td>
+            <td >110</td>
+            <td></td>
+            <td>₱8,000</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>3</td>
+            <td ></td>
+            <td >110</td>
+            <td></td>
+            <td>37,000</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>8</td>
+            <td ></td>
+            <td >110</td>
+            <td></td>
+            <td>7,200</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>14</td>
+            <td ></td>
+            <td >110</td>
+            <td></td>
+            <td>6,000</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>20</td>
+            <td ></td>
+            <td >110</td>
+            <td>20,000</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>28</td>
+            <td ></td>
+            <td >110</td>
+            <td></td>
+            <td>6,000</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>31</td>
+            <td ></td>
+            <td >110</td>
+            <td></td>
+            <td>12,000</td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td>₱170,000</td>
+            <td>₱76,200</td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td class="double-underline">₱93,800</td>
+            <td></td>
+        </tr>
+</table>
+<br>
+<table>
+
+    <tr>
+        <td colspan="6" style="font-weight: bold;">Accounts Receivable</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">2022</td>
+        <td >Particulars</td>
+        <td>Account No.</td>
+        <td>Debit</td>
+        <td>Credit</td>
+        
+    </tr>
+
+    <tr>
+        <td>Dec.</td>
+        <td>30</td>
+        <td ></td>
+        <td >120</td>
+        <td class="double-underline">₱48,000</td>
+        <td></td>
+
+    </tr>
+    </table>
+    <br>
+    <table>
+
+        <tr>
+            <td colspan="6" style="font-weight: bold;">Fees Receivable</td>
+        </tr>
+    
+        <tr>
+            <td colspan="2">2022</td>
+            <td >Particulars</td>
+            <td>Account No.</td>
+            <td>Debit</td>
+            <td>Credit</td>
+            
+        </tr>
+    
+        <tr>
+            <td></td>
+            <td></td>
+            <td ></td>
+            <td >130</td>
+            <td></td>
+            <td></td>
+    
+        </tr>
+        </table>
+    <br>
+
+    <table>
+
+        <tr>
+            <td colspan="6" style="font-weight: bold;">Supplies</td>
+        </tr>
+    
+        <tr>
+            <td colspan="2">2022</td>
+            <td >Particulars</td>
+            <td>Account No.</td>
+            <td>Debit</td>
+            <td>Credit</td>
+            
+        </tr>
+    
+        <tr>
+            <td>Dec.</td>
+            <td>2</td>
+            <td ></td>
+            <td >140</td>
+            <td class="double-underline">₱7,200</td>
+            <td></td>
+        </tr>
+       
+        </table>
+    <br>
+    <table>
+        <tr >
+            <td colspan="6" style="font-weight: bold;">Office Equipment</td>
+        </tr>
+    
+        <tr>
+            <td colspan="2">2022</td>
+            <td >Particulars</td>
+            <td>Account No.</td>
+            <td>Debit</td>
+            <td>Credit</td>
+            
+        </tr>
+    
+        <tr>
+            <td>Dec.</td>
+            <td>3</td>
+            <td ></td>
+            <td >150</td>
+            <td class="double-underline">₱75,000</td>
+            <td></td>
+    
+        </tr>
+    </table>
+    <br>
+    <table>
+    <tr>
+        <td colspan="6" style="font-weight: bold;">Accumulated Depreciation</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">2022</td>
+        <td >Particulars</td>
+        <td>Account No.</td>
+        <td>Debit</td>
+        <td>Credit</td>
+        
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td ></td>
+        <td >155</td>
+        <td></td>
+        <td></td>
+
+    </tr>
+</table>
+<br>
+<table>
+    <tr>
+        <td colspan="6" style="font-weight: bolder;">LIABILITIES</td>
+    </tr>
+<tr>
+    <td colspan="6" style="font-weight: bold;">Accounts Payable</td>
+</tr>
+
+<tr>
+    <td colspan="2">2022</td>
+    <td >Particulars</td>
+    <td>Account No.</td>
+    <td>Debit</td>
+    <td>Credit</td>
+    
+</tr>
+
+<tr>
+    <td>Dec.</td>
+    <td>2</td>
+    <td ></td>
+    <td >210</td>
+    <td></td>
+    <td>₱7,200</td>
+</tr>
+
+<tr>
+    <td>Dec.</td>
+    <td>3</td>
+    <td ></td>
+    <td >210</td>
+    <td></td>
+    <td>38,000</td>
+</tr>
+<tr>
+    <td>Dec.</td>
+    <td>8</td>
+    <td ></td>
+    <td >210</td>
+    <td>₱7,200</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4"></td>
+    <td></td>
+    <td class="double-underline">₱38,000</td>
+</tr>
+</table>
+<br>
+<table>
+    <tr>
+        <td colspan="6" style="font-weight: bold;">Salaries Payable</td>
+    </tr>
+    
+    <tr>
+        <td colspan="2">2022</td>
+        <td >Particulars</td>
+        <td>Account No.</td>
+        <td>Debit</td>
+        <td>Credit</td>
+        
+    </tr>
+    
+    <tr>
+        <td></td>
+        <td></td>
+        <td ></td>
+        <td >220</td>
+        <td></td>
+        <td ></td>
+    </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td colspan="6" style="font-weight: bolder;">OWNER'S EQUITY</td>
+        </tr>
+        <tr>
+            <td colspan="6" style="font-weight: bold;">Detoya, Capital</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">2022</td>
+            <td >Particulars</td>
+            <td>Account No.</td>
+            <td>Debit</td>
+            <td>Credit</td>
+            
+        </tr>
+        
+        <tr>
+            <td>Dec.</td>
+            <td>1</td>
+            <td ></td>
+            <td >310</td>
+            <td></td>
+            <td class="double-underline">₱150,000</td>
+        </tr>
+        
+    </table>
+    <br>
+    <table>
+        
+        <tr>
+            <td colspan="6" style="font-weight: bold;">Detoya, Drawing</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">2022</td>
+            <td >Particulars</td>
+            <td>Account No.</td>
+            <td>Debit</td>
+            <td>Credit</td>
+            
+        </tr>
+        
+        <tr>
+            <td>Dec.</td>
+            <td>31</td>
+            <td ></td>
+            <td >320</td>
+            <td class="double-underline">₱12,000</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <br>
+    <table>
+        <tr>
+            <td colspan="6" style="font-weight: bolder;">INCOME</td>
+        </tr>
+        <tr>
+            <td colspan="6" style="font-weight: bold;">Income Summary</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">2022</td>
+            <td >Particulars</td>
+            <td>Account No.</td>
+            <td>Debit</td>
+            <td>Credit</td>
+            
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td ></td>
+            <td >330</td>
+            <td></td>
+            <td></td>
+        </tr>     
+    </table>
+    <br>
+    <table>
+        
+        <tr>
+            <td colspan="6" style="font-weight: bold;">Consulting Revenues</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">2022</td>
+            <td >Particulars</td>
+            <td>Account No.</td>
+            <td>Debit</td>
+            <td>Credit</td>
+            
+        </tr>
+        
+        <tr>
+            <td>Dec.</td>
+            <td>20</td>
+            <td ></td>
+            <td >410</td>
+            <td></td>
+            <td>₱20,000</td>
+        </tr>
+        <tr>
+            <td>Dec.</td>
+            <td>30</td>
+            <td ></td>
+            <td >410</td>
+            <td></td>
+            <td>48,000</td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td></td>
+            <td class="double-underline">₱68,000</td>
+        </tr>
+        
+    </table>
+    <br>
+
+    <table>
+        <tr>
+            <td colspan="6" style="font-weight: bolder;">EXPENSES</td>
+        </tr>
+        <tr>
+            <td colspan="6" style="font-weight: bold;">Salaries Expense</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">2022</td>
+            <td >Particulars</td>
+            <td>Account No.</td>
+            <td>Debit</td>
+            <td>Credit</td>
+            
+        </tr>
+        
+        <tr>
+            <td>Dec.</td>
+            <td>14</td>
+            <td ></td>
+            <td >510</td>
+            <td>₱6,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Dec.</td>
+            <td>28</td>
+            <td ></td>
+            <td >510</td>
+            <td>6,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td class="double-underline">₱12,000</td>
+            <td></td>
+        </tr>
+        
+    </table>
+   
+    <br>
+    <table>
+       
+        <tr>
+            <td colspan="6" style="font-weight: bold;">Supplies Expense</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">2022</td>
+            <td >Particulars</td>
+            <td>Account No.</td>
+            <td>Debit</td>
+            <td>Credit</td>
+            
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td ></td>
+            <td >520</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    
+    <table>
+       
+        <tr>
+            <td colspan="6" style="font-weight: bold;">Rent Expense</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">2022</td>
+            <td >Particulars</td>
+            <td>Account No.</td>
+            <td>Debit</td>
+            <td>Credit</td>
+            
+        </tr>
+        
+        <tr>
+            <td>Dec.</td>
+            <td>2</td>
+            <td ></td>
+            <td >530</td>
+            <td class="double-underline">₱8,000</td>
+            <td></td>
+        </tr>
+        
+    </table>
+    <br>
+    
+    <table>
+       
+        <tr>
+            <td colspan="6" style="font-weight: bold;">Depreciation Expense</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">2022</td>
+            <td >Particulars</td>
+            <td>Account No.</td>
+            <td>Debit</td>
+            <td>Credit</td>
+            
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td ></td>
+            <td >540</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+</body>

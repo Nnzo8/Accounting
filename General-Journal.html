@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Journal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        
+        a {
+            list-style-type: none;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+            border-radius: 5px;
+        } 
+        table {
+            border-collapse: collapse;
+            width: 9in;
+            margin-top: 100px auto;  
+            align-items: center; 
+            margin: 0 auto;
+        }
+
+        table, th, td {
+            border: 2px solid black;
+            align-items: center;
+            font-size: 20px;
+            
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        
+        .account-number {
+        background-color: #fc6c85;
+        }
+
+          /* Header Row */
+        tr:nth-child(1),
+        tr:nth-child(2) 
+        
+        
+        
+        {
+            background-color: #B0A695;
+        }
+        tr:nth-child(3),
+        tr:nth-child(5),
+        tr:nth-child(6),
+        tr:nth-child(7),
+        tr:nth-child(8),
+        tr:nth-child(9),
+        tr:nth-child(10),
+        tr:nth-child(12),
+        tr:nth-child(13),
+        tr:nth-child(15),
+        tr:nth-child(16),
+        tr:nth-child(17),
+        tr:nth-child(19),
+        tr:nth-child(21),
+        tr:nth-child(22),
+        tr:nth-child(23),
+        tr:nth-child(24),
+        tr:nth-child(4),
+        tr:nth-child(11),
+        tr:nth-child(14),
+        tr:nth-child(18),
+        tr:nth-child(20),
+        tr:nth-child(25),
+        tr:nth-child(26),
+        tr:nth-child(27),
+        tr:nth-child(28),
+        tr:nth-child(29),
+        tr:nth-child(30),
+        tr:nth-child(31),
+        tr:nth-child(32),
+        tr:nth-child(33),
+        tr:nth-child(34),
+        tr:nth-child(35)
+
+        {
+            background-color: #EBE3D5;
+        }
+        /* Adjust the width of the first column in row 3 */
+        tr:nth-child(3) td:nth-child(1) {
+            width: 0.5in;
+        }
+        header {
+            background-color: #27374D;
+            height: 60px;
+            text-align: right;
+            font-size: 17px;
+            padding-top: 5px;
+        }
+        ul, ol {
+            margin-bottom: 30px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        li {
+            margin-bottom: 5px;
+            margin-right: 10px;
+        }
+        .double-underline {
+            position: relative;
+            
+        }
+        .double-underline:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            right: 0;
+            width: 80px;
+            margin-left: -40px;
+            bottom: 10px;
+            height: 3px;
+            border-bottom: 3px double;
+        }
+    </style>
+    </head>
+<body>
+    <header>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="chart.html">Chart of Accounts</a></li>
+        <li><a href="General-Journal.html">General Journal</a></li>
+        <li><a href="Ledger.html">General Ledger</a></li>
+        <li><a href="trialbalance.html">Trial Balance</a></li>
+        <li><a href="adjustingentries.html">Adjusting Entries</a></li>
+        <li><a href="worksheet.html">Worksheet</a></li>
+        <li><a href="financialstatement.html">Financial Statements</a></li>
+    </ul>
+    </header>
+    
+    <h1 style="text-align: center;">General Journal</h1>
+    <table>
+        <!-- Row 1 -->
+        
+        <!-- Row 2 -->
+        <tr>
+            <td colspan="2" style="font-weight: bold; padding-left: 1ch;">Date</td>
+            <td colspan="2" style="font-weight: bold; padding-left: 2ch;">Particulars</td>
+            <td style="font-weight: bold;">Account No.</td>
+            <td colspan="2" style="font-weight: bold;">Dr</td>
+            <td colspan="1" style="font-weight: bold;">Cr</td>
+            
+        </tr>
+        <!-- Row 3 -->
+        <tr>
+            <td colspan="2" style="font-weight: bold;">2022</td>
+            <td colspan="2"></td>
+            <td></td>
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+<!-- Row 4 -->
+        <tr>
+            <td>Dec</td>
+            <td>1</td>
+            <td colspan="2" style="text-align: left;">Cash</td>
+            <td>110</td>
+            <td colspan="2" style="text-align: right;">₱150,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td colspan="2" style="text-align: left; padding-left: 60px;">Detoya, Capital</td>
+            <td>310</td>
+            <td  colspan="2"></td>
+            <td style="text-align: right;">₱150,000</td>
+        </tr>
+        <tr>
+            <td</td>
+            <td></td>
+            <td></td>
+            <td colspan="2">To record the initial investment of Detoya</td>
+            <td></td>
+            <td colspan="2"></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td>2</td>
+            <td colspan="2" style="text-align: left;">Rent Expense</td>
+            <td>530</td>
+            <td colspan="2" style="text-align: right;">8,000</td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2"style="text-align: left; padding-left: 60px;">Cash</td>
+            <td>110</td> 
+            <td colspan="2"></td> 
+            <td style="text-align: right;">8,000</td> 
+        </tr>
+        
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2">To record the payment of the rent</td>
+            <td></td> 
+            <td colspan="2"></td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td>2</td> 
+            <td colspan="2" style="text-align: left; ">Supplies</td>
+            <td>140</td> 
+            <td colspan="2" style="text-align: right;">7,200</td> 
+            <td></td> 
+        </tr>
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2" style="text-align: left; padding-left: 60px;">Accounts Payable</td>
+            <td>210</td> 
+            <td colspan="2"></td> 
+            <td style="text-align: right;">7,200</td> 
+        </tr>
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2">To record the supplies purchased on account</td>
+            <td></td> 
+            <td colspan="2"></td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td>3</td> 
+            <td colspan="2"style="text-align: left;">Office Equipment</td>
+            <td>150</td> 
+            <td colspan="2" style="text-align: right;">75,000</td> 
+            <td></td> 
+        </tr>
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2"style="text-align: left; padding-left: 60px;">Cash</td>
+            <td>110</td> 
+            <td colspan="2"></td> 
+            <td style="text-align: right;">37,000</td> 
+        </tr>
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2"style="text-align: left; padding-left: 60px;">Accounts Payable</td>
+            <td>210</td> 
+            <td colspan="2" style="text-align: right;"></td> 
+            <td style="text-align: right;">38,000</td> 
+        </tr>
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2">To record downpayment of purchased office equipment and on account</td>
+            <td></td> 
+            <td colspan="2"></td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td>8</td> 
+            <td colspan="2"style="text-align: left; ">Accounts Payable</td>
+            <td>210</td> 
+            <td colspan="2" style="text-align: right;">7,200</td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2"style="text-align: left; padding-left: 60px;">Cash</td>
+            <td>110</td> 
+            <td colspan="2"></td> 
+            <td style="text-align: right;">7,200</td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2">To record payment of supplies on account in Dec. 2</td>
+            <td></td> 
+            <td colspan="2"></td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td>14</td> 
+            <td colspan="2"style="text-align: left; ">Salaries Expense</td>
+            <td>510</td> 
+            <td colspan="2" style="text-align: right;">6,000</td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2"style="text-align: left; padding-left: 60px;">Cash</td>
+            <td>110</td> 
+            <td colspan="2"></td> 
+            <td style="text-align: right;">6,000</td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2">To record payment of salaries to assistant for two weeks</td>
+            <td></td> 
+            <td colspan="2"></td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td>20</td> 
+            <td colspan="2"style="text-align: left; ">Cash</td>
+            <td>110</td> 
+            <td colspan="2" style="text-align: right;">20,000</td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2"style="text-align: left; padding-left: 60px;">Consulting Revenues</td>
+            <td>410</td> 
+            <td colspan="2"></td> 
+            <td style="text-align: right;">20,000</td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2">To record consulting services</td>
+            <td></td> 
+            <td colspan="2"></td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td>28</td> 
+            <td colspan="2"style="text-align: left; ">Salaries Expense</td>
+            <td>510</td> 
+            <td colspan="2" style="text-align: right;">6,000</td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2"style="text-align: left; padding-left: 60px;">Cash</td>
+            <td>110</td> 
+            <td colspan="2"></td> 
+            <td style="text-align: right;">6,000</td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2">To record payment of salaries to assistant for two weeks</td>
+            <td></td> 
+            <td colspan="2"></td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td>30</td> 
+            <td colspan="2"style="text-align: left; ">Accounts Receivable</td>
+            <td>120</td> 
+            <td colspan="2" style="text-align: right;">48,000</td> 
+            <td></td> 
+        </tr>
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2"style="text-align: left; padding-left: 60px;">Consulting Revenues</td>
+            <td>410</td> 
+            <td colspan="2"></td> 
+            <td style="text-align: right;">48,000</td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2">To record billed consulting services</td>
+            <td></td> 
+            <td colspan="2"></td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td>31</td> 
+            <td colspan="2"style="text-align: left; ">Detoya, Drawing</td>
+            <td>320</td> 
+            <td colspan="2" style="text-align: right;">12,000</td> 
+            <td></td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2"style="text-align: left; padding-left: 60px;">Cash</td>
+            <td>110</td> 
+            <td colspan="2"></td> 
+            <td style="text-align: right;">12,000</td> 
+        </tr>
+
+        <tr>
+            <td></td> 
+            <td></td> 
+            <td colspan="2">To record the withdrawal of Detoya</td>
+            <td></td> 
+            <td colspan="2"></td> 
+            <td></td> 
+        </tr>
+        <tr>
+            <td colspan="6"></td>
+            <td class="double-underline">₱339,400</td>
+            <td class="double-underline">₱339,400</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+</body>

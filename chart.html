@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart of Accounts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 6in;
+            margin-top: 20px auto;  
+            align-items: center; 
+        }
+        ul, ol {
+            margin-bottom: 30px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        li {
+            margin-bottom: 5px;
+            margin-right: 10px;
+        }
+
+        table, th, td {
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .account-number {
+        background-color: #DDF2FD;
+        }
+
+          /* Header Row */
+        tr:nth-child(1),
+        tr:nth-child(2)
+        
+        {
+            background-color: #265073;
+        }
+        tr:nth-child(3),
+        tr:nth-child(5),
+        tr:nth-child(6),
+        tr:nth-child(7),
+        tr:nth-child(8),
+        tr:nth-child(9),
+        tr:nth-child(10),
+        tr:nth-child(12),
+        tr:nth-child(13),
+        tr:nth-child(15),
+        tr:nth-child(16),
+        tr:nth-child(18),
+        tr:nth-child(19),
+        tr:nth-child(21),
+        tr:nth-child(22),
+        tr:nth-child(23),
+        tr:nth-child(24)
+        {
+            background-color: #427D9D;
+        }
+        /* Adjust the width of the first column in row 3 */
+        tr:nth-child(3) td:nth-child(1) {
+            width: 0.5in;
+        }
+        tr:nth-child(17),
+        tr:nth-child(4),
+        tr:nth-child(11),
+        tr:nth-child(14),
+        
+        tr:nth-child(20) {
+            background-color: #aad8e5;
+        }
+        a {
+            list-style-type: none;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+            border-radius: 5px;
+        } 
+        header {
+            background-color: #27374D;
+            height: 60px;
+            text-align: right;
+            font-size: 17px;
+            padding-top: 5px;
+        }
+        @media only screen and (max-width: 600px) {
+            th, td {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="chart.html">Chart of Accounts</a></li>
+        <li><a href="General-Journal.html">General Journal</a></li>
+        <li><a href="Ledger.html">General Ledger</a></li>
+        <li><a href="trialbalance.html">Trial Balance</a></li>
+        <li><a href="adjustingentries.html">Adjusting Entries</a></li>
+        <li><a href="worksheet.html">Worksheet</a></li>
+        <li><a href="financialstatement.html">Financial Statements</a></li>
+    </ul>
+    </header>
+    <br>
+    <br>
+    <br>
+    <table>
+        <!-- Row 1 -->
+        <tr>
+            <td colspan="2">Edgar Detoya </td>
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+            <td colspan="2">CHART OF ACCOUNTS</td>
+        </tr>
+        <!-- Row 3 -->
+        <tr>
+            <td style="width: 0.5in; background-color: #DDF2FD;">Acc No.</td>
+            <td></td>
+        </tr>
+        <!-- ASSETS -->
+        <tr>
+            <td colspan="2">ASSETS</td>
+        </tr>
+        <tr>
+            <td class ="account-number">110</td>
+            <td style="text-align: left; padding-left: 20px;">Cash</td>
+        </tr>
+        <tr>
+            <td class ="account-number">120</td>
+            <td style="text-align: left; padding-left: 20px;">Accounts Receivable</td>
+        </tr>
+        <tr>
+            <td class ="account-number">130</td>
+            <td style="text-align: left; padding-left: 20px;">Fees Receivable</td>
+        </tr>
+        <tr>
+            <td class ="account-number">140</td>
+            <td style="text-align: left; padding-left: 20px;">Supplies</td>
+        </tr>
+        <tr>
+            <td class ="account-number">150</td>
+            <td style="text-align: left; padding-left: 20px;">Office Equipment</td>
+        </tr>
+        <tr>
+            <td class ="account-number">155</td>
+            <td style="text-align: left; padding-left: 20px;">Accumulated Depreciation</td>
+        </tr>
+
+        <!-- Liabilities -->
+        <tr>
+            <td colspan="2">LIABILITIES</td>
+        </tr>
+        <tr>
+            <td class ="account-number">210</td>
+            <td style="text-align: left; padding-left: 20px;">Accounts Payable</td>
+        </tr>
+        <tr>
+            <td class ="account-number">220</td>
+            <td style="text-align: left; padding-left: 20px;">Salaries Payable</td>
+        </tr>
+
+        <!-- Owner's Equity -->
+        <tr>
+            <td colspan="2">OWNER'S EQUITY</td>
+        </tr>
+        <tr>
+            <td class ="account-number">310</td>
+            <td style="text-align: left; padding-left: 20px;">Detoya, Capital</td>
+        </tr>
+        <tr>
+            <td class ="account-number">320</td>
+            <td style="text-align: left; padding-left: 20px;">Detoya, Withdrawals</td>
+        </tr>
+
+
+        <!-- Owner's Equity -->
+        <tr>
+            <td colspan="2">INCOME</td>
+        </tr>
+        <tr>
+            <td class ="account-number">330</td>
+            <td style="text-align: left; padding-left: 20px;">Income Summary</td>
+        </tr>
+        <tr>
+            <td class ="account-number">410</td>
+            <td style="text-align: left; padding-left: 20px;">Consulting Revenues</td>
+        </tr>
+        
+        <!-- Expenses -->
+        <tr>
+            <td colspan="2">EXPENSES</td>
+        </tr>
+        <tr>
+            <td class ="account-number">510</td>
+            <td style="text-align: left; padding-left: 20px;">Salaries Expense</td>
+        </tr>
+        <tr>
+            <td class ="account-number">520</td>
+            <td style="text-align: left; padding-left: 20px;">Supplies Expense</td>
+        </tr>
+        <tr>
+            <td class ="account-number">530</td>
+            <td style="text-align: left; padding-left: 20px;">Rent Expense</td>
+        </tr>
+        <tr>
+            <td class ="account-number">540</td>
+            <td style="text-align: left; padding-left: 20px;">Depreciation Expense</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+   
+
+</body>
+</html>

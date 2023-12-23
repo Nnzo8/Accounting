@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Balance </title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1, h2, h4 {
+            color: black;
+            text-align: center; 
+        }
+        
+        ul, ol {
+            margin-bottom: 30px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        li {
+            margin-bottom: 5px;
+            margin-right: 10px;
+        }
+
+        a {
+            list-style-type: none;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }   
+        
+        header {
+            background-color: #27374D;
+            height: 60px;
+            text-align: right;
+            font-size: 17px;
+            padding-top: 5px;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .double-underline {
+            position: relative;
+            
+        }
+        .double-underline:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            right: 0;
+            width: 80px;
+            margin-left: -40px;
+            bottom: 10px;
+            height: 3px;
+            border-bottom: 3px double;
+        }
+      
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(1),
+        tbody tr:nth-child(2),
+        tbody tr:nth-child(3),
+        tbody tr:nth-child(4),
+        tbody tr:nth-child(5),
+        tbody tr:nth-child(6),
+        tbody tr:nth-child(7),
+        tbody tr:nth-child(8),
+        tbody tr:nth-child(9),
+        tbody tr:nth-child(10),
+        tbody tr:nth-child(11)
+         {
+            background-color: #9EC8B9;
+            
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="chart.html">Chart of Accounts</a></li>
+        <li><a href="General-Journal.html">General Journal</a></li>
+        <li><a href="Ledger.html">General Ledger</a></li>
+        <li><a href="trialbalance.html">Trial Balance</a></li>
+        <li><a href="adjustingentries.html">Adjusting Entries</a></li>
+        <li><a href="worksheet.html">Worksheet</a></li>
+        <li><a href="financialstatement.html">Financial Statements</a></li>
+    </ul>
+    </header>
+<br>
+    <!-- Table -->
+    <table>
+        <!-- Additional Rows for Edgar Detoya, Trial Balance, and December 31 -->
+        <thead>
+            <tr>
+                <th colspan="5" style="background-color: #204646; ">Edgar Detoya</th>
+            </tr>
+            <tr>
+                <th colspan="5" style="background-color: #204646;">Trial Balance</th>
+            </tr>
+            <tr>
+                <th colspan="5" style="background-color: #204646;">December 31, 2022</th>
+            </tr>
+            <tr>
+                <th style="background-color: #5C8374;">Account No.</th>
+                <th style="background-color: #5C8374;">Account Title</th>
+                <th style="background-color: #5C8374;">Debit Balance</th>
+                <th style="background-color: #5C8374;">Credit Balance</th>
+            </tr>
+        </thead>
+        <!-- Table Body -->
+        <tbody>
+            <!-- Example Row 1 -->
+            <tr>
+                <td>110</td>
+                <td style="text-align: left;">Cash</td>
+                <td>₱93,800</td>
+                <td></td>
+            </tr>
+            <!-- Example Row 2 -->
+            <tr>
+                <td>120</td>
+                <td style="text-align: left;">Accounts Receivable</td>
+                <td>48,000</td>
+                <td></td>
+            </tr>
+            <!-- Add more rows as needed -->
+            <tr>
+                <td>140</td>
+                <td style="text-align: left;">Supplies</td>
+                <td>7,200</td>
+                <td></td>
+            </tr>
+            <!-- Add more rows as needed -->
+            <tr>
+                <td>150</td>
+                <td style="text-align: left;">Office Equipment</td>
+                <td>75,000</td>
+                <td></td>
+            </tr>
+            <!-- Add more rows as needed -->
+            <tr>
+                <td>210</td>
+                <td style="text-align: left;">Account Payable</td>
+                <td></td>
+                <td>₱38,000</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            <tr>
+                <td>310</td>
+                <td style="text-align: left;">Deyota, Capital</td>
+                <td></td>
+                <td>150,000</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            <tr>
+                <td>320</td>
+                <td style="text-align: left;">Deyota, Withdrawals</td>
+                <td>12,000</td>
+                <td></td>
+            </tr>
+            <!-- Add more rows as needed -->
+            <tr>
+                <td>410</td>
+                <td style="text-align: left;">Consulting Revenues</td>
+                <td></td>
+                <td>68,000</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            <tr>
+                <td>510</td>
+                <td style="text-align: left;">Salaries Expense</td>
+                <td>12,000</td>
+                <td></td>
+            </tr>
+            <!-- Add more rows as needed -->
+            <tr>
+                <td>530</td>
+                <td style="text-align: left;">Rent Expense</td>
+                <td>8,000</td>
+                <td></td>
+            </tr>
+            <!-- Add more rows as needed -->
+            <tr>
+                
+                <td colspan="2" style="text-align: right;">Total:</td>
+                <td class="double-underline">₱256,000</td>
+                <td class="double-underline">₱256,000</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+    <br>
+    <br>
+</body>
+
+</html>
